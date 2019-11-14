@@ -1,0 +1,45 @@
+{
+    "name": "spatie/packagist-api",
+    "description": "Fetch package info from Packagist",
+    "keywords": [
+        "spatie",
+        "packagist",
+        "api"
+    ],
+    "homepage": "https://github.com/spatie/packagist-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Freek Van der Herten",
+            "email": "freek@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        },
+        {
+            "name": "Jolita Grazyte",
+            "email": "jolita@spatie.be",
+            "homepage": "https://spatie.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "^5.5|^7.0",
+        "guzzlehttp/guzzle":"^6.2.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8.36"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spatie\\Packagist\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Spatie\\Packagist\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
